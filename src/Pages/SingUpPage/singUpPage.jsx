@@ -27,6 +27,7 @@ export default function SingUpPage() {
         <a className="icon-logo" href={""}></a>
         <h1 className="title">Sign Up with email</h1>
         <form className="form" method="post" onSubmit={handleSubmit(onSubmit)}>
+          <p className="input_title">Gender</p>
           <label className="input_item">
             <input
               type="radio"

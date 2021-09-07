@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
   font-family: Montserrat;
 }
 
@@ -10,209 +10,236 @@ body {
 }
 
 .App {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
+  align-items    : center;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: center;
-  align-items: center;
-  width: 340px;
-  background: #ffffff;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
+  align-items    : center;
+  width          : 340px;
+  background     : #ffffff;
+  box-shadow     : 5px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius  : 16px;
 }
 
 .icon-logo {
-  background-image: url("./images/icon.svg");
-  width: 54.57px;
-  height: 56px;
+  background-image : url("./images/icon.svg");
+  width            : 54.57px;
+  height           : 56px;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 25px;
+  background-size  : contain;
+  margin-top       : 25px;
 }
 
 .title {
-  font-style: normal;
+  font-style : normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size  : 24px;
   line-height: 29px;
-  margin-top: 21px;
+  margin-top : 21px;
 }
 
 .form {
   padding: 24px 16px 16px 16px;
 }
+
 .input_title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #5b5b5b;
+  font-style   : normal;
+  font-weight  : bold;
+  font-size    : 16px;
+  line-height  : 20px;
+  color        : #5b5b5b;
   margin-bottom: 8px;
 }
+
 .input_item {
   margin-right: 19px;
 }
+
 .input_itemO {
   margin-right: 0px;
 }
+
 .input_gender {
-  position: absolute;
+  position          : absolute;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -moz-appearance   : none;
+  appearance        : none;
 }
+
 .input_gender_item {
-  position: relative;
-  width: 90px;
-  height: 80px;
-  border: 1px solid #c1c1c1;
-  border-radius: 16px;
-  display: inline-flex;
+  position       : relative;
+  width          : 90px;
+  height         : 80px;
+  border         : 1px solid #c1c1c1;
+  border-radius  : 16px;
+  display        : inline-flex;
   justify-content: center;
-  padding-top: 50px;
-  margin-bottom: 20px;
+  padding-top    : 50px;
+  margin-bottom  : 20px;
 }
 
 .input_gender_M {
-  position: absolute;
-  top: 10px;
-  left: 29px;
-  width: 32px;
-  height: 32px;
+  position        : absolute;
+  top             : 10px;
+  left            : 29px;
+  width           : 32px;
+  height          : 32px;
   background-image: url("./images/male.svg");
 }
+
 .input_gender_F {
-  position: absolute;
-  top: 10px;
-  left: 35.31px;
-  width: 19.38px;
-  height: 32px;
+  position        : absolute;
+  top             : 10px;
+  left            : 35.31px;
+  width           : 19.38px;
+  height          : 32px;
   background-image: url("./images/female.svg");
 }
+
 .input_gender_O {
-  position: absolute;
-  top: 10px;
-  left: 31.94px;
-  width: 28.12px;
-  height: 32px;
+  position        : absolute;
+  top             : 10px;
+  left            : 31.94px;
+  width           : 28.12px;
+  height          : 32px;
   background-image: url("./images/other.svg");
 }
+
 .input_gender_title {
   color: #5b5b5b;
 }
-.input_gender:checked:focus + .input_gender_item {
+
+.input_gender:checked:focus+.input_gender_item {
   border: 1px solid #3c9c41;
 }
-.input_gender:checked:focus + * .input_gender_title {
+
+.input_gender:checked:focus+* .input_gender_title {
   color: #3c9c41;
 }
-.input_gender:checked:focus + * .input_gender_M {
+
+.input_gender:checked:focus+* .input_gender_M {
   background-image: url("./images/malegreen.svg");
 }
-.input_gender:checked:focus + * .input_gender_F {
+
+.input_gender:checked:focus+* .input_gender_F {
   background-image: url("./images/femalegreen.svg");
 }
-.input_gender:checked:focus + * .input_gender_O {
+
+.input_gender:checked:focus+* .input_gender_O {
   background-image: url("./images/othergreen.svg");
 }
+
 .form_label {
-  position: relative;
-  display: inline-block;
+  position     : relative;
+  display      : inline-block;
   margin-bottom: 20px;
 }
+
 .password_eye,
 .password_eye_active {
   position: absolute;
-  right: 17px;
-  top: 38px;
-  cursor: pointer;
+  right   : 17px;
+  top     : 38px;
+  cursor  : pointer;
 }
+
 .password_eye::after {
-  position: absolute;
-  content: "";
-  right: 0px;
-  top: 14px;
-  width: 30px;
-  height: 1.5px;
+  position  : absolute;
+  content   : "";
+  right     : 0px;
+  top       : 14px;
+  width     : 30px;
+  height    : 1.5px;
   background: #c1c1c1;
-  transform: rotate(45deg);
+  transform : rotate(45deg);
   transition: 0.3s all ease;
-  opacity: 1;
+  opacity   : 1;
 }
+
 .password_eye_active::after {
   opacity: 0;
 }
+
 .input_field:valid {
   border-color: #3c9c41;
 }
+
 .input_field:invalid {
   border-color: #d23737;
 }
+
 .input_field,
 .input_field_error {
-  width: 308px;
-  height: 50px;
-  border: 1px solid #c1c1c1;
+  width        : 308px;
+  height       : 50px;
+  border       : 1px solid #c1c1c1;
   border-radius: 16px;
-  padding-left: 15px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  outline: none;
+  padding-left : 15px;
+  font-weight  : normal;
+  font-size    : 16px;
+  line-height  : 20px;
+  outline      : none;
 }
 
 .input_field_error {
   border: 1px solid #d23737;
 }
+
 .btn {
-  width: 100%;
-  height: 50px;
-  background: #3c9c41;
+  width        : 100%;
+  height       : 50px;
+  background   : #3c9c41;
   border-radius: 16px;
-  border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
+  border       : none;
+  font-style   : normal;
+  font-weight  : bold;
+  font-size    : 16px;
+  line-height  : 20px;
+  color        : #ffffff;
   margin-bottom: 16px;
 }
+
 .btn:hover {
   background: #4db252;
-  cursor: pointer;
+  cursor    : pointer;
 }
+
 .btn:active {
   background: #318636;
 }
 
 .registr {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5b5b5b;
+  font-style   : normal;
+  font-weight  : normal;
+  font-size    : 14px;
+  line-height  : 17px;
+  color        : #5b5b5b;
   margin-bottom: 16px;
 }
+
 .registr:last-child {
   margin-bottom: 18px;
 }
+
 .switch {
   font-weight: bold;
-  color: #3c9c41;
+  color      : #3c9c41;
 }
+
 .message_warning {
-  font-style: normal;
+  font-style : normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size  : 16px;
   line-height: 20px;
-  color: #d23737;
-  margin-top: 12px;
+  color      : #d23737;
+  margin-top : 12px;
 }
+
 @media screen and (min-width: 570px) {
   .container {
     width: 570px;
@@ -220,8 +247,8 @@ body {
 
   .icon-logo {
     margin-top: 29px;
-    width: 79.91px;
-    height: 82px;
+    width     : 79.91px;
+    height    : 82px;
   }
 
   .title {
@@ -231,64 +258,72 @@ body {
   .form {
     padding: 35px 35px 30px 35px;
   }
+
   .input_title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size    : 18px;
+    line-height  : 22px;
     margin-bottom: 12px;
   }
+
   .input_item {
     margin-right: 16px;
   }
+
   .input_gender_item {
-    width: 156px;
-    height: 100px;
-    padding-top: 60px;
+    width        : 156px;
+    height       : 100px;
+    padding-top  : 60px;
     margin-bottom: 30px;
   }
 
   .input_gender_M {
-    top: 20px;
+    top : 20px;
     left: 62px;
   }
 
   .input_gender_F {
-    top: 20px;
+    top : 20px;
     left: 68.31px;
   }
 
   .input_gender_O {
-    top: 20px;
+    top : 20px;
     left: 63.94px;
   }
+
   .input_field,
   .input_field_error {
-    width: 500px;
-    height: 70px;
+    width       : 500px;
+    height      : 70px;
     padding-left: 25px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size   : 18px;
+    line-height : 22px;
   }
+
   .form_label {
     margin-bottom: 30px;
   }
+
   .btn {
-    height: 70px;
-    font-size: 18px;
-    line-height: 22px;
+    height       : 70px;
+    font-size    : 18px;
+    line-height  : 22px;
     margin-bottom: 30px;
   }
+
   .registr {
-    font-size: 18px;
-    line-height: 22px;
+    font-size    : 18px;
+    line-height  : 22px;
     margin-bottom: 20px;
   }
 
   .registr:last-child {
     margin-bottom: 35px;
   }
+
   .password_eye,
   .password_eye_active {
     right: 26px;
-    top: 53px;
+    top  : 53px;
   }
 }
